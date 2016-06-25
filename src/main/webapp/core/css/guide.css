@@ -1,0 +1,153 @@
+.wrapper {
+	width: 898px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.splash-wrapper {
+	width: 898px;
+	height: 440px;
+	position: relative;
+	margin-top: 0;
+	background: #99dcff;
+	background: #72D66A;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.rslides {
+	width: 100%;
+	position: relative;
+	list-style: none;
+	padding: 0;
+	height: 440px;
+	overflow: hidden;
+}
+
+.rslides>li {
+	width: 100%;
+	text-align: center;
+	padding-top: 36px;
+}
+
+.rslides_nav {
+	padding: 0 10px;
+	color: #fff;
+	height: 51px;
+	text-align: left;
+	width: 80px;
+	font-size: 3em;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	top: 50%;
+	left: 0;
+	opacity: 0.5;
+	filter: alpha(opacity =         50);
+	/*text-indent: -9999px;*/
+	overflow: hidden;
+	text-decoration: none !important;
+	margin-top: -28px;
+	height: 51px;
+}
+
+.rslides_nav:active {
+	opacity: 1.0;
+	filter: alpha(opacity =         100);
+}
+
+.rslides_nav.next {
+	text-align: right;
+	left: auto;
+	right: 0;
+}
+
+.rslides_tabs {
+	position: absolute;
+	bottom: 9px;
+	right: 16px;
+	margin: 0;
+}
+
+.rslides_tabs li {
+	display: inline;
+	float: none;
+	margin-right: 5px;
+}
+
+.rslides_tabs a {
+	text-indent: -9999px;
+	overflow: hidden;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, .2);
+	background: #FFF;
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+}
+
+.rslides_tabs .rslides_here a {
+	background: rgba(0, 0, 0, .6);
+	background: #6BD368;
+}
+
+.weixin_list>li {
+	ist-style-type: disc;
+	padding: 4px 0px;
+}
+
+.bs-callout {
+	padding: 16px 22px;
+	margin: 20px 30px;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
+}
+
+.bs-callout-info {
+	position: relative;
+	border-left-color: #5bc0de;
+	line-height: 22px;
+}
+
+.bs-callout-info h4 {
+	color: #5bc0de;
+	margin-bottom: 5px;
+}
+
+.bs-callout-danger {
+	border-left-color: #d9534f;
+	line-height: 22px;
+}
+
+.bs-callout-danger h4 {
+	color: #d9534f;
+	margin-bottom: 5px;
+}
+
+.qrcode-img {
+	top: 155px;
+	left: 180px;
+	position: absolute;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.ps{
+	position: absolute;
+	color: #FD9527;
+}
+
+.ps1{
+	left: 308px;
+	top: 550px;
+}
+.ps2{
+	left: 664px;
+	top: 692px;
+}
+.ps3{
+	left: 248px;
+	bottom: 126px;
+}

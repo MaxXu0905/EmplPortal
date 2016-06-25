@@ -1,0 +1,458 @@
+body {
+	background: url("../images/bg-wall.gif") repeat scroll -70% 0 #fff;
+	font-size: 14px;
+	line-height: 1;
+	overflow-x: hidden;
+}
+
+a{
+	cursor: pointer;
+}
+
+h1.title {
+	color: #FFF;
+	font-family: inherit;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+h1.title>small {
+	color: #E67E22;
+}
+
+.main {
+	margin: -125px 0 0 0;
+}
+
+.container {
+	
+}
+
+.main>.container {
+	padding: 0 0 70px 0;
+}
+
+.step:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/* 
+ul.step_list {
+	height: 100% !important;
+	overflow: visible !important;
+}
+ */
+.alert {
+	transition: all 0.1s ease-in-out;
+	transition-property: height;
+}
+
+/** 步骤项 **/
+ul.step_list>li.step {
+	background: none repeat scroll 0 0 rgb(255, 255, 255);
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+	list-style: none outside none;
+	margin: 5px 10px 70px;
+	padding: 30px 80px;
+	position: relative;
+	display: none;
+ }
+ul.step_list>li.step .next-step {
+	position: absolute;
+	left: 160px;
+	position: absolute;
+	width: 900px;
+	bottom: -60px;
+}
+
+ul.step_list>li.step .next-step .btn-step {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	transition-property: width, padding, font-size, border-radius;
+}
+
+/******** 第一步相关 **********/
+#step1 dt,dd {
+	margin-bottom: 10px;
+}
+
+#step1 dt {
+	font-weight: normal;
+	height: 34px;
+	line-height: 34px;
+	width: 80px;;
+	text-align: left;
+}
+
+#step1 dd {
+	margin-left: 80px !important;
+}
+
+#step1 .form-control{
+	cursor: default;
+	background-color: #fff;
+}
+
+#step1 .form-control[disabled],
+#step1 fieldset[disabled] .form-control {
+  	cursor: not-allowed;
+  	background-color: #fafafa;
+  	border-color: #fafafa;
+	box-shadow: none;
+}
+
+#step1 .level {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+
+#step1 .paper-item {
+	position: relative;
+	padding: 9px 16px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	margin-bottom: 6px;
+	line-height: 1.428571429;
+	cursor: pointer;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+#step1 .paper-item-active {
+	border-color: #46b8da;
+	border-width: 2px;
+}
+
+#step1 .paper-item .paper-name {
+	font-size: 1.1em;
+}
+
+#step1 .paper-item .base-info {
+	margin: 10px 0;
+}
+
+#step1 .paper-item .base-info>li {
+	margin-right: 10px;
+}
+
+#step1 .paper-item .create-time {
+	color: #999;
+}
+
+#step1 .paper-item .paper-select {
+	text-align: center;
+	width: 60px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 1em;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	float: right;
+	color: #46b8da;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#step1 .paper-item .paper-selected {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	font-size: 3.5em;
+}
+
+#step1 .paper-item .build-in {
+	margin-left: 4px;
+	vertical-align: super;
+	font-size: 0.8em;
+}
+
+#step1 .paper-item .type-infos {
+	position: absolute;
+	top: 9px;
+	right: 86px;
+}
+
+#step1 .paper-item .type-info-header,#step1 .paper-item .type-info {
+	line-height: 1.428571429;
+	height: 82px;
+	border-radius: 4px;
+	margin: 0 4px 0 0;
+	padding: 8px 4px 0;
+}
+
+#step1 .paper-item .type-info-header {
+	text-align: right;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin-right: 10px;
+}
+
+#step1 .paper-item .type-info-header-active {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	margin-right: 4px;
+}
+
+#step1 .paper-item .type-info {
+	background-color: #fff;
+	border: 1px solid #cccccc;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#step1 .paper-item .type-info>div {
+	font-size: 0.95em;
+}
+
+#step1 .paper-item .type-info-header>.q-number,#step1 .paper-item .type-info>.q-number
+	{
+	margin: 4px 0 3px;
+	margin: 12px 0 3px;
+	color: rgb(91, 192, 222);
+	font-weight: 900;
+}
+
+#step1 .paper-item .type-info-header>.q-point,#step1 .paper-item .type-info>.avg-point
+	{
+	color: #999;
+}
+/** end 第一步相关 */
+/** 第二步相关 */
+#step2 .info-tag-fixed,#step2 .info-tag {
+	display: inline-block;
+	width: 147px;
+	text-align: left;
+	position: relative;
+	background: #fff !important;
+	margin: 1px;
+	float: left;
+}
+
+.info-placeholder {
+	float: left;
+}
+
+.info-placeholder:after {
+	content: "放在这里";
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	display: inline-block;
+	width: 147px;
+	margin: 2px 1px;
+	background: #5BC0DE;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+}
+
+.text-success:hover {
+	color: #2b542c;
+}
+
+#step2 .info-tag:after {
+	right: 8px;
+	display: inline-block;
+	position: absolute;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0 2px;
+	-webkit-transition: color, opacity 0.2s ease-in-out;
+	transition: color, opacity 0.2s ease-in-out;
+}
+
+#step2 .info-tag-fixed:after {
+	content: "必选";
+	font-size: 8px;
+	border-radius: 0.25em;
+	color: #fff;
+	font-weight: bold;
+	padding: 0.2em 0.5em 0.3em;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: rgb(92, 184, 92);
+}
+
+#step2 .info-tag-choosed:after {
+	content: "\f068";
+	font-family: FontAwesome;
+	color: #a94442;
+}
+
+#step2 .info-tag-choosed:hover:after {
+	color: #d9534f;
+}
+
+#step2 .info-tag-unchoosed:after {
+	content: "\f067";
+	font-family: FontAwesome;
+	color: #3c763d;
+}
+
+#step2 .info-tag-unchoosed:hover:after {
+	color: #5cb85c;
+}
+
+#step2 .info-tag-choosed:after:hover {
+	color: #843534;
+}
+
+/** end 第二步相关 */
+
+/** 下拉tab选择器 */
+.tab-select-wrapper {
+	padding: 0;
+	border-radius: 4px;
+	width: 670px;
+}
+
+.select-tabs {
+	list-style: none;
+	overflow: hidden;
+	background: #F5F5F5;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.select-tabs>li {
+	display: inline-block;
+	text-align: center;
+	padding: 6px 0;
+	cursor: pointer;
+	float: left;
+	border: 1px solid transparent;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.select-tabs>li.active {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	color: #269ABC;
+	background: #FFF;
+}
+
+.select-content {
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+}
+
+.select-content>div {
+	display: none;
+	padding: 4px;
+}
+
+.select-content>div>span {
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	position: relative;
+	display: inline-block;
+	padding: 0 24px;
+	margin: 0;
+	display: inline-block;
+	border-radius: 4px;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+
+.select-content>div>span.empty {
+	cursor: default;
+	width: 100%;
+}
+
+.select-content>div>span.series:hover {
+	background: #F5F5F5;
+}
+
+.select-content .active {
+	display: block;
+}
+
+.select-content>div>span.build-in:after {
+	content: "百一";
+	font-size: 8px;
+	border-radius: 0.25em;
+	color: rgb(255, 255, 255);
+	display: inline;
+	font-size: 60%;
+	font-weight: bold;
+	line-height: 1;
+	vertical-align: super;
+	padding: 0.2em 0.5em 0.3em;
+	text-align: center;
+	white-space: nowrap;
+	background-color: rgb(92, 184, 92);
+	font-weight: bold;
+	padding: 0.2em 0.5em 0.3em;
+}
+/** end 下拉tab选择器 */
+
+.divider{
+	border-top: 1px solid #DDDDDD; 
+	border-bottom: 1px solid #F5F5F5; 
+	margin: 20px 0;
+}
+
+/** 委托 **/
+.form-group label{
+	display: inline;
+}
+
+#trustee_email{
+	width: 250px;
+}
+
+.autorize-alert{
+	padding: 7px 10px 9px;
+	margin: 2px 0 0 10px;
+}
+
+.list-trustee{
+	margin: 10px 0;
+}
+
+.list-trustee > li{
+	border: 1px solid #5BC0DE;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	padding: 9px 12px 9px 16px;
+	border-radius: 4px;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.trustee-remove{
+	margin-left: 12px;
+	color: #A94442;
+}
+.trustee-remove:hover{
+	color: #d9534f;
+}
+/** end 委托 **/
+
+
+
+
+
+
+
+

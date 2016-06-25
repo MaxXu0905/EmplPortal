@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* ==  CSS Framework ========================================
+ * Copyright (c) 2014
+ * version: 1.0
+ * -------------------------------------------- 2014/2/12 ----- */
+/**
+ * skin-green
+ * @author zengjie
+ */
+/* 
+----------------------------------------------------------------------------------------------------*/
+/*背景*/
+.headerbg,.footerbg{background-color:#28D5D3;}
+.stepband
+{
+  background-color: rgba(0, 0, 0, 0.2) !important ;/*透明背景*/
+}
+/*footer*/
+.footfn,.footfn a{color:#FFF}
+
+/*首页contain*/
+.indexcontain{
+	padding-top:65px;
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #f5f5f5;
+}
+/*首页step*/
+.stepicon{background-color:#FF9900;display: inline-block;border-radius:25px;box-shadow:5px 5px 2px #888888;border:2px solid #FFF;width:40px;vertical-align: top;text-align:center;color:#FFF;margin-left:-50px;margin-right:10px}

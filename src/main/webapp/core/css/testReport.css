@@ -1,0 +1,425 @@
+@CHARSET "UTF-8";
+
+  body {
+	background: url("../images/bg-wall.gif") repeat scroll -70% 0 #f7dde7;
+	font-size: 14px;
+}  
+
+.content {
+	background-color: #fff;
+}
+
+.floatSkill{
+	display:none
+}
+
+.button-flat{
+	background-color: #fff !important
+}
+.button-flat:hover{
+	background-color: #eee !important
+}
+
+.select_title_content {
+	display:none;
+	padding-bottom:3px;
+}
+
+.select_title_content>li {
+	float: left;
+}
+
+.title {
+
+	text-align: center;
+}
+.positionTitle{
+	font-weight: normal;
+}
+
+.startTime {
+	z-index: 9999;
+	position: absolute;
+	margin-top: 10px;
+	background-color: #fff;
+	margin-left: 20%;
+	color: black !important;
+	width:33%
+}
+
+.title_username {
+	color:rgb(102, 186, 219);
+	font-size:18pt
+}
+
+.answer_wrong {
+	background: url('../images/rtwg.png') no-repeat left bottom;
+	padding-left: 30px;
+	margin-left: 20px
+}
+
+.answer_right {
+	background: url('../images/rtwg.png') no-repeat left top;
+	padding-left: 30px;
+	margin-left: 20px
+}
+
+.score_content {
+	display: none;
+}
+
+.mymirror{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.mymirror>.CodeMirror{
+	height: 100%;
+} 
+
+#graph_overview .items-score {
+	margin: 0 40px;
+}
+#system_list{
+	margin: 0 40px;
+}
+
+#graph_overview .items-score .score-item {
+	margin: 0 4px 0 0;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #DDD;
+	padding: 20px 0;
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid #DDD;
+}
+#system_list .items-score .score-item{
+	margin: 0 4px 0 0;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #DDD;
+	padding: 20px 0;
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid #DDD;
+}
+
+#graph_overview .items-score .score-item>div {
+	color: #5BC0DE;
+	font-weight: 900;
+	padding: 10px 0;
+	font-size: 20px;
+}
+#system_list {
+	color: #5BC0DE;
+	font-weight: 700;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+.technology_content_common {
+	font-weight: normal !important;
+}
+
+.skill_content_title {
+	width: 100%;
+	height: auto;
+}
+
+.skill_name {
+	color: #5bc0de;
+	font-size: 15px;
+	margin-top:10px;
+}
+.skill_name span{color:#464646;}
+.skill_name_sys{
+	color:rgb(66,139,202);
+	font-size: 16px;
+}
+
+.skill_content_border {
+	border: 1px solid red;
+}
+
+.skill_content_title>li {
+	list-style: none;
+}
+
+.bs-callou>li {
+	list-style: none;
+}
+
+.bs-callout {
+	list-style: none;
+}
+
+.skill_title {
+	margin-left: 40px;
+}
+.content_title>li {
+	float: left;
+	list-style: none;
+}
+
+.content_title {
+	height: 30px;
+	margin-top: 10px;
+	width: 500px;
+	margin-left: 20px;
+}
+
+.exam_time_total {
+	border-radius: 20px;
+	margin-left: 3%;
+	background-color: rgb(153, 153, 153);
+	margin-top: 3px;
+	color:#fff;
+}
+
+.exam_title_content {
+	padding-left: 11px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff !important;
+}
+
+.select_exam_content {
+	display: none;
+}
+
+label {
+	font-weight: normal;
+}
+
+.program_content {
+	background-color: #eeeeee;
+}
+
+.program_question {
+	background-color: #eeeeee;
+	height: auto;
+	width: 100%;
+}
+
+.student_answer_content {
+	padding-left: 30px;
+	width: 980px;
+	height: 310px;
+	padding-top:10px;
+}
+
+.stu_answer_content_score {
+	margin-top: 8px;
+	margin-left: 20px;
+	color: #fff;
+	width: 50%;
+}
+
+.stu_answer_content {
+	margin-top: 8px;
+	margin-left: 20px;
+	border-radius: 20px;
+	background-color: rgb(153, 153, 153);
+	color: #fff;
+}
+
+.floatTitle>li {
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 20px;
+	display:none;
+}
+.floatTitle>li.hover {
+	background-color: none;
+}
+.floatTitle>li.active {
+	background-color: #fff;
+}
+
+.nav-main{
+	margin-left: 10px;
+}
+
+/* .skill_background {
+	background-color: #fff;
+	border-radius: 20px
+} */
+.report_content{
+	position: relative;
+	margin:10px 20px;
+}
+
+.report_content>li {
+	list-style: none;
+}
+
+.change_rel_score {
+	cursor: pointer;
+	margin-left: 70px;
+	float: left;
+}
+
+.systemcontent>li {
+	list-style: none;
+}
+
+.positionTitle {
+	font-size: 12pt;
+	font-weight:normal;
+}
+
+.iqanswer {
+	height: auto !important;
+}
+
+.videoquestion {
+	margin-left: 20px;
+}
+
+.bs-callout {
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
+	margin-top:15px;
+	padding:12px 0px;
+}
+
+.bs-callout-info {
+	border-left-color: #5bc0de;
+	line-height: 22px;
+}
+.bs-callout-info ul>li.select_title{
+	color: #5baede;
+	font-weight: 400;
+	font-size: 13pt;
+}
+
+.bs-callout-info h4 {
+	color: #5bc0de;
+	margin-bottom: 5px;
+}
+
+.bs-callout-danger {
+	border-left-color: #d9534f;
+	line-height: 22px;
+}
+.bs-callout-danger ul>li.select_title{
+	color: #d9534f;
+	font-weight: 400;
+	font-size: 13pt;
+}
+
+
+.bs-callout-danger h4 {
+	color: #d9534f;
+	margin-bottom: 5px;
+}
+
+.bs-callout-success {
+	border-left-color: #5cb85c;
+	line-height: 22px;
+}
+
+.bs-callout-success ul>li.select_title{
+	color: #5cb85c;
+	font-weight: 400;
+	font-size: 13pt;
+}
+
+
+
+
+.bs-callout-success h4 {
+	color: #5cb85c;
+	margin-bottom: 5px;
+}
+
+.answer_re_right{
+	border-top:1px dashed #c9c9c9;
+	padding-left:50px;
+	color:#5bc0de;
+}
+.answer_re_right2{
+	border-top:1px dashed #c9c9c9;
+	padding-left:15px;
+	color:#5bc0de;
+}
+.technology_content_common >span{
+	padding-left:15px;
+}
+
+/*yejf  add*/
+.report{
+width:980px;
+margin:0px auto;
+background-color:#fff;		
+}
+.header_report{
+height:100px;
+background-color:#f1f1f1;
+border-bottom:1px solid #d7d7d7;
+position: relative;	
+	font-size:24px;
+	color:#2476c2;
+	line-height:75px;
+	padding-left:260px;
+	font-weight: 600;	
+	letter-spacing:1.2px;	
+}
+.nameinfo{}
+.nameinfo_left{
+	float:left;
+width:350px;
+padding-top:40px;
+}
+.nameinfo_right{
+	float:right;
+width:600px;
+}
+
+#personPhoto{
+	height:180px;
+	width:180px;
+	position: absolute;
+	left:48px;
+	top:20px;	
+	z-index:999;
+}
+.score_end{text-align:center;
+margin-top:60px;
+font-size:20px;
+color:#3498db;
+}
+.parttitle{color:#464646;font-size:20px;
+font-weight: 600;
+margin-top:20px;
+}
+.iqAvgScore{font-size:16px;color:388fcb;font-weight:300;padding-left:20px;}
+.sysAvgScore{font-size:16px;color:388fcb;font-weight:300;padding-left:20px;}
+.tabpadding{margin:15px;}
+
+.sed_title{
+	padding: 12px;
+	font-size: 1.3em;
+	color: #428BCA;
+	letter-spacing: 1.5px;
+	border-bottom: 1px solid #d7d7d7; 
+	background-color: rgb(241, 241, 241);
+	text-align: center;
+	font-weight: 500;
+	margin-top:15px;	
+}
+.yc_img{margin:20px 2px;}
+.slider{padding-top:20px;}
+pre{
+border: none;
+background-color: #fff;
+margin:0;
+padding:0;
+display:inline;
+white-space: pre-line;
+}

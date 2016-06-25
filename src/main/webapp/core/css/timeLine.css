@@ -1,0 +1,148 @@
+#timeline a {
+	color: #DCDCDC;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+#timeline a:hover,#timeline a.selected {
+	color: #fff;
+	text-decoration: none;
+}
+
+#timeline .sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#timeline {
+	width: 1200px;
+	height: 150px;
+	overflow: hidden;
+	margin: 20px auto;
+	position: relative;
+	background: url('../images/dot.gif') left 45px repeat-x;
+	display: none;
+}
+
+#timeline #dates {
+	width: 1200px;
+	height: 60px;
+	overflow: hidden;
+}
+
+#timeline #dates li {
+	list-style: none;
+	float: left;
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	background: url('../images/biggerdot.png') center bottom no-repeat;
+}
+
+#timeline #dates a {
+	line-height: 28px;
+	padding-bottom: 10px;
+}
+
+#timeline #dates .selected {
+	font-size: 26px;
+}
+
+#timeline #issues {
+	width: 1200px;
+	height: 150px;
+	overflow: hidden;
+	color: #fff;
+	display: none
+}
+
+#timeline #issues li {
+	width: 1200px;
+	height: 150px;
+	list-style: none;
+	float: left;
+	text-align: center;
+}
+
+#timeline #issues li h2 {
+	margin: 10px auto;
+	color: #fff;
+}
+
+#timeline #issues li i {
+	margin-left: 20px;
+	margin-right: 5px;
+	color: #ffcc00;
+	line-height: 30px;
+}
+
+#timeline #issues li p {
+	font-size: 14px;
+	margin-right: 70px;
+	font-weight: normal;
+	line-height: 22px;
+	text-shadow: #000 1px 1px 2px;
+}
+
+#timeline #grad_left,#grad_right {
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+}
+
+#timeline #grad_left {
+	left: 0;
+	background: url('../images/grad_left.png') repeat-y;
+}
+
+#timeline #grad_right {
+	right: 0;
+	background: url('../images/grad_right.png') repeat-y;
+}
+
+#timeline #next,#prev {
+	position: absolute;
+	top: 0;
+	font-size: 70px;
+	top: 75px;
+	width: 22px;
+	height: 38px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#timeline #next:hover,#prev:hover {
+	background-position: 0 -76px;
+}
+
+#timeline #next {
+	right: 0;
+	background-image: url('../images/next.png');
+}
+
+#timeline #prev {
+	left: 0;
+	background-image: url('../images/prev.png');
+}
+
+#timeline #next.disabled,#prev.disabled {
+	opacity: 0.2;
+}
+
+#timeline .text_white {
+	color: white;
+}
+
+#timeline .text_ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

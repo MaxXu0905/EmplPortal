@@ -1,0 +1,104 @@
+﻿@charset "UTF-8";
+/* ==  CSS Framework ========================================
+ * Copyright (c) 2014
+ * version: 1.0
+ * -------------------------------------------- 2014/2/12 ----- */
+/**
+ * base
+ * @author zengjie
+ */
+/* 
+----------------------------------------------------------------------------------------------------*/
+/*css Reset*/
+html{
+	color:#000;
+	height:100%;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,
+textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+}
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,textarea,select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%; /*to enable resizing for IE*/
+}
+legend {
+	color:#000;
+}
+label, .lbl {
+vertical-align: middle;
+}
+/*login*/
+.logina{
+	background: url("../images/logina.png") no-repeat 10px 8px !important;
+	padding-left:40px !important;
+}
+.loginb{
+	background: url("../images/loginb.png") no-repeat 10px 8px !important;
+	padding-left:40px !important;
+}
+.loginc{
+	background: url("../images/loginc.png") no-repeat 10px 8px !important;
+	padding-left:40px !important;
+}
+.logind{
+	background: url("../images/logind.png") no-repeat 10px 8px !important;
+	padding-left:40px !important;
+}
+.logine{
+	background: url("../images/logine.png") no-repeat 10px 8px !important;
+	padding-left:40px !important;
+}
+
+.mark{
+	border: 1px solid red !important;
+}
+.qrcode_foot{
+background:url(../images/qrcode.gif) no-repeat top left;
+padding-left:160px;
+height:140px;
+}
+.footerh{
+font-size:22px;
+margin-bottom:10px;
+}

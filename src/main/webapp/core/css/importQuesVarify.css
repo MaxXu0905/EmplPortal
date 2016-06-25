@@ -1,0 +1,214 @@
+@CHARSET "UTF-8";
+a,button{
+    cursor: pointer;
+}
+a{
+    color:#39b3d7;
+}
+.tohide {
+display: none;
+}
+body {
+    font-size: 14px;
+    line-height: 1;
+    overflow-x: hidden;
+}
+.btn[disabled]{
+	cursor: not-allowed;
+}
+/* a.exportError {
+float: right;
+top: 15px;
+position: relative;
+} */
+ul.quesitionlib>li:hover {
+background-color: #f4f8fa;
+}
+li.quesitionlib-list {
+padding: 20px;
+/* border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc; */
+margin-top: -1px;
+min-height: 174px;
+}
+select.form-control {
+width: auto;
+}
+ul#errorAlertInfo {
+list-style: initial;
+margin-left: 20px;
+}
+ul#errorAlertInfo >li{
+padding: 5px 0;
+}
+span.number{
+	color: #39b3d7;
+}
+span.title {
+color: #ff7800;
+}
+ul.error li {
+margin-bottom: 10px;
+}
+.dl-horizontal dt{
+	width:auto;
+}
+.dl-horizontal dd {
+margin-left: auto;
+padding-bottom: 10px;
+padding-left: 100px;
+}
+dd>div.auto.input-group {
+width: 160px;
+}
+.alertInfo{
+	min-height: 34px;
+line-height: 34px;
+padding: 8px;
+margin-left: 10px;
+}
+/*批量导入*/
+.bs-callout.bs-callout-danger {
+border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+color: #d9534f;
+}
+.bs-callout {
+padding: 20px;
+margin: 20px 0;
+border: 1px solid #eee;
+border-left-width: 5px;
+border-radius: 3px;
+}
+ol.step{
+list-style-type: decimal;
+padding-left: 20px;
+}
+ol.step >li{
+padding: 5px 0px;
+}
+/*下载*/
+.uploadify-button {
+border: 1px solid rgba(0, 0, 0, 0);
+-moz-user-select: none;
+background-image: none;
+border-radius: 4px;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: normal;
+margin-bottom: 0;
+padding: 6px 12px;
+text-align: center;
+vertical-align: middle;
+white-space: nowrap;
+font-family: inherit;
+color: #333;
+background-color: #fff;
+border-color: #ccc;
+padding: 0px 12px;
+}
+.uploadify-button-hover{
+color: #333;
+background-color: #ebebeb;
+border-color: #adadad;
+}
+div.uploadify,div.uploadify-queue{
+	display:inline;
+}
+div.uploadify-queue{
+float: left;
+text-align: right;
+margin-right: 10px;
+max-width: inherit;
+width: 100%;
+}
+/*相似度错误*/
+.oldQuestion{
+	width:50%;
+	border-right: 1px solid #ccc;
+	padding-right: 25px;
+}
+.newQuestion{
+	width:50%;
+	padding-left: 25px;
+}
+.similarQuestion .dl-horizontal dd{
+	padding-left: 70px;
+}
+
+/*技能选择*/
+.dropdown-menu {
+	background-color: #fff;
+	width:316px;
+	margin: 0;
+	padding: 0;
+}
+.currentskill{
+ min-height: 210px;
+ max-height:230px;
+ overflow: auto;
+}
+.dropdown .dropdown-menu .group li:hover,.dropdown .dropdown-menu .group li:focus{
+	background-color: #39b3d7;
+	color:#fff;
+}
+.dropdown .dropdown-menu .group li {
+display: block;
+height: 30px;
+line-height: 30px;
+cursor: pointer;
+text-decoration: none;
+white-space: nowrap;
+overflow: hidden;
+padding-left: 8px;
+}
+.dropdown .dropdown-menu .group {
+background: #fcfcfc;
+position: relative;
+}
+.dropdown .dropdown-menu .group .side-title {
+position: absolute;
+left: 0;
+top: 0;
+width: 35px;
+height: 100%;
+border-top: 1px solid #EBEBEB;
+}
+.dropdown .dropdown-menu .group .selections {
+margin-left: 35px;
+background: #fff;
+border-left: 1px solid #EBEBEB;
+margin-bottom: 0px;
+}
+.dropdown .dropdown-menu .filtrate {
+height: 210px;
+overflow: auto;
+position: relative;
+}
+.dropdown .dropdown-menu .filtrate .group .selections{
+	height: 210px;
+	margin-bottom: 0px;
+}
+
+.dropdown .dropdown-menu .filter {
+background: #FAFAFA;
+border-top: 1px solid #EBEBEB;
+border-radius: 0 0 3px 3px;
+cursor: default;
+padding: 8px;
+position: relative;
+}
+input#skillsearch{
+	display: inline;
+   width: 85%;
+}
+/*end 技能选择*/
+
+/*checkbox样式*/
+label.check-box>input {
+	display: inherit;
+	position: absolute;
+	left: -99999px;
+}

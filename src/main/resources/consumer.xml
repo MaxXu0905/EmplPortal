@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+	<context:property-placeholder location="classpath:emplportal.properties" />
+	<!-- consumer application name -->
+	<dubbo:application name="consumer-of-emplportal-app" />
+	<!-- registry address, used for consumer to discover services -->
+	<dubbo:registry address="${zookeeper.registry.address}"
+		group="${zookeeper.registry.group}"
+		file="${user.home}/.dubbo/dubbo-registry-consumer-EmplPortal-${zookeeper.registry.group}" />
+	<dubbo:reference id="loginServ"
+		interface="com.ailk.sets.platform.intf.empl.service.ILogin" check="false"
+		retries="0" />
+	<dubbo:reference id="configServ"
+		interface="com.ailk.sets.platform.intf.empl.service.IConfig" check="false"
+		retries="0" />
+	<dubbo:reference id="infoCollectServ"
+		interface="com.ailk.sets.platform.intf.empl.service.IInfoCollect" check="false"
+		retries="0" />
+	<dubbo:reference id="positionServ"
+		interface="com.ailk.sets.platform.intf.empl.service.IPosition" check="false"
+		retries="0" />
+	<dubbo:reference id="reportServ"
+		interface="com.ailk.sets.platform.intf.empl.service.IReport" check="false"
+		retries="0" />
+	<dubbo:reference id="gradeService"
+		interface="com.ailk.sets.grade.intf.IGradeService" check="false" retries="0" />
+	<dubbo:reference id="loadService"
+		interface="com.ailk.sets.grade.intf.ILoadService" check="false" retries="0" />
+	<dubbo:reference id="candidateInfoServ"
+		interface="com.ailk.sets.platform.intf.cand.service.ICandidateInfoService"
+		check="false" retries="0" />
+	<dubbo:reference id="iInviteService"
+		interface="com.ailk.sets.platform.intf.empl.service.IInvite" check="false"
+		retries="0" />
+	<dubbo:reference id="candidateTestService"
+		interface="com.ailk.sets.platform.intf.cand.service.ICandidateTest" check="false"
+		retries="0" />
+	<dubbo:reference id="employerTrial"
+		interface="com.ailk.sets.platform.intf.empl.service.IEmployerTrial" check="false"
+		retries="0" />
+	<dubbo:reference id="wxEmplService"
+		interface="com.ailk.sets.platform.intf.empl.service.IWXEmplService" check="false"
+		retries="0" />
+	<dubbo:reference id="paperServ"
+		interface="com.ailk.sets.platform.intf.empl.service.IPaper" check="false"
+		retries="0" />
+	<dubbo:reference id="qbBaseServ"
+		interface="com.ailk.sets.platform.intf.empl.service.IQbBase" check="false"
+		retries="0" />
+	<dubbo:reference id="schoolPositionServ"
+		interface="com.ailk.sets.platform.intf.empl.service.ISchoolPositionService" check="false"
+		retries="0" />
+    <dubbo:reference id="ssoLoginImpl"
+		interface="com.ailk.sets.platform.intf.empl.service.ISSOLogin" check="false"
+		retries="0" />
+    <dubbo:reference id="iConfigSysParamService"
+		interface="com.ailk.sets.platform.intf.empl.service.IConfigSysParamService" check="false"
+		retries="0" />
+	<dubbo:reference id="appService"
+		interface="com.ailk.sets.platform.intf.cand.service.IAppService" check="false"
+		retries="0" />
+</beans>

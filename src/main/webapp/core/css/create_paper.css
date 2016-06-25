@@ -1,0 +1,765 @@
+body {
+	background: url("../images/bg-wall.gif") repeat scroll -70% 0 #fff;
+	font-size: 14px;
+	line-height: 1;
+	overflow-x: hidden;
+}
+
+a {
+	cursor: pointer;
+}
+
+.bottom-gap {
+	margin-top: 100px;
+}
+
+.step:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.alert {
+	transition: all 0.1s ease-in-out;
+	transition-property: height;
+}
+
+/** icon 百一 */
+.icon-101:after {
+	display: block;
+	content: "百一";
+	font-size: 8px;
+	border-radius: 0.25em;
+	color: rgb(255, 255, 255);
+	display: inline;
+	font-size: 60%;
+	font-weight: bold;
+	line-height: 1;
+	vertical-align: super;
+	padding: 0.2em 0.5em 0.3em;
+	text-align: center;
+	white-space: nowrap;
+	background-color: rgb(92, 184, 92);
+	font-weight: bold;
+	padding: 0.2em 0.5em 0.3em;
+	content: "百一";
+}
+
+/** 步骤项 **/
+.step {
+	background: none repeat scroll 0 0 rgb(255, 255, 255);
+	border-radius: 4px;
+	list-style: none outside none;
+	margin: 10px 0 20px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+	padding: 0;
+}
+
+/*
+.step:hover {
+	box-shadow: 0 0 5px rgba(119, 119, 119, 1);
+	-webkit-box-shadow: 0 0 5px rgba(119, 119, 119, 1);
+	-moz-box-shadow: 0 0 5px rgba(119, 119, 119, 1);
+}
+*/
+.step dt,dd {
+	margin-bottom: 10px;
+}
+
+.step dt {
+	font-weight: normal;
+	height: 34px;
+	line-height: 34px;
+	width: 80px !important;
+	text-align: left !important;
+}
+
+.step dd {
+	margin-left: 80px !important;
+}
+
+.step .step-header {
+	border-radius: 4px;
+}
+
+.step .step-header>.divider {
+	opacity: 0;
+	filter: alpha(opacity =     0);
+	border-bottom: 2px solid #5BC0DE;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-bottom: 2px solid #5BC0DE;
+}
+
+.step .step-header-checked {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.step .step-header-checked>.divider {
+	opacity: 1;
+	filter: alpha(opacity =     100);
+}
+
+.step .step-header label.check-box {
+	width: 100%;
+	font-weight: bold;
+	margin: 10px 30px 5px;
+}
+
+.step-body {
+	padding: 10px 30px;
+}
+
+.setting {
+	margin: 0 0 40px 32px;
+}
+
+.setting>.part {
+	position: relative;
+	border: 1px solid #EEEEEE;
+	border-left: 4px solid #5BC0DE;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.setting>.part>.part-content {
+	padding: 20px;
+}
+
+.setting>.part>.part-content>.change {
+	position: absolute;
+	width: 10%;
+	right: 20%;
+	top: 0;
+	font-weight: bold;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+}
+
+.setting>.part>.part-toggle {
+	text-align: center;
+	width: 20%;
+	line-height: 32px;
+	font-size: 12px;
+	height: 32px;
+	font-weight: bold;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding: 0 10px;
+	cursor: pointer;
+	color: #fff;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	background: #5BC0DE;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.setting>.part>.part-toggle:hover {
+	background: #D9534F;
+}
+
+.setting>.part>.part-toggle-hide {
+	top: -32px;
+}
+
+.setting>.part-ban {
+	border: none;
+	padding: 0 !important;
+	height: 32px !important;
+}
+
+.setting>.part-ban>.part-content {
+	display: none;
+}
+
+.setting>.part-ban>.part-toggle {
+	top: 0;
+	right: 80%;
+	border-radius: 4px;
+	border: 1px solid #CCC;
+	border-left: 4px solid #5BC0DE;
+	background: #fff;
+	color: #8E97A1;
+}
+
+.setting>.part-ban>.part-toggle:hover {
+	background: #5BC0DE;
+	border: 1px solid #5BC0DE;
+	border-left-width: 4px;
+	color: #fff;
+}
+
+.setting .popup {
+	font-weight: bold;
+}
+
+.setting .popup:before {
+	content: '\f1c0  ';
+	font-family: FontAwesome;
+}
+
+/** 选择题部分 */
+.choice_setting .input-group {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.choice_setting .wapper-main {
+	position: relative;
+	height: 400px;
+	border-radius: 4px;
+}
+
+.choice_setting .wapper-main-modal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background: #D9EDF7;
+	opacity: 0.4;
+	filter: alpha(opacity = 40) !important;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 100px;
+}
+
+.choice_setting .wrapper {
+	border: 1px solid #EEE;
+	float: left;
+	height: 100%;
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.choice_setting .lib-wrapper {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	width: 28%;
+	overflow-y: hidden;
+}
+
+.choice_setting .skill-wrapper {
+	margin-left: -1px;
+	width: 28%;
+}
+
+.choice_setting .chosen-wrapper {
+	margin-left: -1px;
+	width: 44%;
+	overflow-y: hidden;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.choice_setting .item {
+	position: relative;
+	width: 98%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	cursor: pointer;
+	color: #31708F;
+	margin: 2px 4px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #FAFAFA;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	border-radius: 4px;
+}
+
+.choice_setting .item-selected,.choice_setting .item:hover {
+	background: #5BC0DE;
+	color: #fff;
+}
+
+.choice_setting .item>i {
+	font-size: 14px;
+	opacity: 0;
+	filter: alpha(opacity =     0);
+	position: absolute;
+	color: #fff;
+	right: 10px;
+	line-height: 40px;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.choice_setting .item-selected>i {
+	opacity: 1;
+	filter: alpha(opacity =     100);
+	font-size: 30px;
+}
+
+.choice_setting .item:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/** 题库选择框 */
+.choice_setting .lib-wrapper .lib-list {
+	border-top-left-radius: 4px;
+	overflow-y: auto;
+	height: 357px;
+}
+
+.choice_setting .lib-wrapper .lib-bottom {
+	border-bottom-left-radius: 4px;
+	border-top: 1px solid #EEE;
+	line-height: 40px;
+	font-weight: bold;
+	padding-left: 15px;
+	background: #EEE;
+}
+
+.choice_setting .lib-wrapper .lib-bottom-last {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 4px;
+}
+
+/** 技能选择框 */
+.choice_setting .skill-alert {
+	text-align: center;
+	margin-top: 100px;
+	line-height: 30px;
+}
+
+.choice_setting .skill-alert>i {
+	font-size: 30px;
+}
+
+.choice_setting .skill-item>i {
+	color: #5BC0DE;
+	opacity: 1;
+	filter: alpha(opacity =     100);
+}
+
+.choice_setting .skill-item:hover>i {
+	color: #FFF;
+}
+
+.choice_setting .skill-item-selected {
+	border: 1px dashed #5BC0DE;
+	color: #5BC0DE;
+	background: #fff;
+	pointer-events: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	pointer-events: none;
+}
+
+.choice_setting .skill-item-selected:after {
+	content: '已选择';
+	position: absolute;
+	right: 10px;
+}
+
+.choice_setting .skill-item-selected>i {
+	display: none;
+}
+
+/*** 选中的技能操作框 ***/
+/** 自定义技能描述 */
+.choice_setting .ghost-main {
+	position: relative;
+	height: 100%;
+	background-color: #FAFAFA;
+	padding: 30px 20px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.choice_setting .ghost-main-hide {
+	margin-top: -398px;
+}
+
+.choice_setting .ghostInput {
+	margin: 20px 0 0;
+	height: 34px;
+	resize: none;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+
+.choice_setting .ghostInput-focus {
+	height: 300px;
+}
+
+.choice_setting .btn-ghost-commit {
+	position: absolute;
+	right: 30px;
+	bottom: 43px;
+}
+
+.choice_setting .ghost-alert {
+	position: absolute;
+	left: 0;
+	top: -55px;
+	right: 0;
+	z-index: 2;
+	height: 55px;
+	line-height: 55px;
+	padding-left: 20px;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+.choice_setting .ghost-alert-show {
+	top: 0;
+}
+
+.choice_setting .chosen-wrapper .chosen-list {
+	overflow-y: auto;
+	height: 357px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.choice_setting .chosen-wrapper .chosen-bottom {
+	border-bottom-right-radius: 4px;
+	border-top: 1px solid #EEE;
+	line-height: 40px;
+	padding-left: 15px;
+	background: #EEE;
+}
+
+.choice_setting .chosen-item {
+	width: 98%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px 0 40px;
+	color: #31708F;
+	margin: 2px 4px;
+	background: #FAFAFA;
+	border-radius: 4px;
+	position: relative;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.choice_setting .chosen-item .oper-pre {
+	position: absolute;
+	font-weight: bold;
+	width: 32px;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	left: 10px;
+}
+
+.choice_setting .chosen-item .oper-suf {
+	/*box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);*/
+	position: relative;
+	z-index: 2;
+}
+
+.choice_setting .chosen-item .skill-remove {
+	z-index: 0;
+	opacity: 0;
+	filter: alpha(opacity =     0);
+	color: #A94442;
+	cursor: pointer;
+}
+
+.choice_setting .chosen-item .skill-remove:hover {
+	color: #d9534f;
+}
+
+.choice_setting .chosen-item-selected .skill-remove {
+	z-index: 1;
+	opacity: 1;
+	filter: alpha(opacity =     100);
+	font-size: 1.5em;
+}
+
+.choice_setting .chosen-item .skill-index {
+	text-align: center;
+	z-index: 1;
+	opacity: 1;
+	filter: alpha(opacity =     100);
+	color: #747F8C;
+}
+
+.choice_setting .chosen-item-selected .skill-index {
+	z-index: 0;
+	opacity: 0;
+	filter: alpha(opacity =     0);
+}
+
+.choice_setting .chosen-item .skill-suf {
+	height: 40px;
+}
+
+.choice_setting .chosen-item .skill-suf>span {
+	float: left;
+}
+
+.choice_setting .chosen-item .skill-content {
+	width: 55%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.choice_setting .chosen-item .oper-suf {
+	width: 45%;
+}
+
+.choice_setting .chosen-item .tiny-info {
+	font-weight: bold;
+	border-radius: 4px;
+	text-decoration: none !important;
+}
+/***编程题*******/
+.tech_setting .part-101 {
+	height: 56px;
+}
+
+.tech_setting .part-101 .tiny-select {
+	padding: 4px;
+	border: 1px dashed transparent;
+	margin-top: -5px;
+}
+
+.tech_setting .part-101-active .tiny-select {
+	border: 1px dashed #438BCA;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.tech_setting .part-101-active .tiny-select>i {
+	opacity: 1;
+	filter: alpha(opacity =     100);
+	margin-left: 0;
+}
+
+/***迷你选择框*******/
+.tiny-select {
+	font-weight: bold;
+	border-radius: 4px;
+	text-decoration: none !important;
+}
+
+.tiny-select>i {
+	margin-left: -1em;
+	opacity: 0;
+	filter: alpha(opacity =     0);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.tiny-select-active>i {
+	margin-left: -1em !important;
+	opacity: 0 !important;
+	filter: alpha(opacity =     0) !important;
+}
+
+.tiny-select-active.select-degree {
+	margin-right: 60px;
+}
+
+.choice_setting .tiny-select {
+	margin-top: 2px;
+}
+
+.choice_setting .chosen-item-selected .tiny-select {
+	border: 1px dashed #438BCA;
+}
+
+.choice_setting .chosen-item-selected .tiny-select>i {
+	opacity: 1;
+	filter: alpha(opacity =     100);
+	margin-left: 0;
+}
+
+.tiny-select:hover {
+	border: 1px dashed #438BCA;
+}
+
+.tiny-select>span {
+	display: none;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.tiny-select>span.selected {
+	display: inline-block;
+}
+
+.tiny-select-active:hover,.tiny-select-active {
+	border: 1px solid #428BCA !important;
+	background: #fff;
+	box-shadow: 0 0px 12px rgba(0, 0, 0, 0.176);
+}
+
+.tiny-select-active>span {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-weight: bold;
+	line-height: 1;
+	color: #31708F;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #FAFAFA;
+	border-radius: 10px;
+}
+
+.tiny-select-active>span.selected,.tiny-select-active>span:hover {
+	background-color: #5BC0DE;
+	color: #fff;
+}
+
+/** 题目 **/
+.question {
+	margin-top: 10px;
+	padding: 0;
+}
+
+.question-title-quote:before {
+	content: "\f10d";
+	padding: 0.2em 0.25em 0.15em;
+	margin-right: 0.3em;
+	font-size: 1em;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.question-title-quote:after {
+	content: "\f10e";
+	padding: 0.2em 0.25em 0.15em;
+	margin-right: 0.3em;
+	font-size: 1em;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.question-index {
+	color: #428BCA;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.question-index:after {
+	content: "、"
+}
+
+.question-title {
+	border: none;
+	line-height: 1.428571429;
+	padding: 10px;
+	font-size: 1em;
+	text-shadow: 0 1px 0 rgb(255, 255, 255);
+	background: #FAFAFA;
+	border-radius: 4px;
+	margin: 0;
+	color: rgb(97, 102, 108);
+}
+
+.question-title>.badge {
+	display: none;
+	text-shadow: none;
+}
+
+.question-title > pre{
+	border: none;
+	display: inline;
+	background-color: inherit;
+	color: inherit;
+	padding:0;
+}
+
+/** createMain */
+.create-main,.create-main-backdrop {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	height: 70px;
+	line-height: 70px;
+	left: 0;
+}
+
+.backdrop-focus {
+	opacity: 0.7 !important;
+	filter: alpha(opacity =     70) !important;
+}
+
+.create-main-backdrop {
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity =     50);
+}
+
+.create-main {
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.create-main .add-up {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.create-main .btn-overview,.create-main .btn-create-paper {
+	float: right;
+	width: 200px;
+	display: inline-block;
+	font-size: 24px;
+	text-shadow: none;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.create-main .btn-overview {
+	display: none;
+	background: rgb(116, 127, 140);
+}
+
+.create-main .btn-create-paper {
+	background: #5cb85c;
+}
+
+.create-main .btn-overview:hover {
+	background: #64696F;
+}
+
+.create-main .btn-create-paper:hover {
+	background: #47a447;
+}
+
+.create-main .btn-overview[disabled],.create-main .btn-create-paper[disabled]
+	{
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.65;
+	filter: alpha(opacity =     65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
